@@ -113,4 +113,11 @@ public class GoogleSSOHandler : MonoBehaviour
         });
 
     }
+
+    public void SignOut()
+    {
+        status += "Calling Signout\n";
+        auth.SignOut();
+        GoogleSignIn.DefaultInstance.SignOut();
+    }
 }
